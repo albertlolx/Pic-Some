@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.ri-shopping-cart-line, .ri-shopping-cart-fill {
+    margin: 0 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    transition: 150ms;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.ri-shopping-cart-line:hover, .ri-shopping-cart-fill:hover {
+    box-shadow: 0 0 25px #525252;
+}
+
+header {
+    height: 15vh;
+    background-color: #F47B6E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    margin: 0 125px;
+    color: white;
+    font-size: 3rem;
+    transition: 150ms;
+}
+
+header h2:hover {
+    text-shadow: 0 0 15px #525252;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-container {
+    position: relative;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+.tall {
+    grid-row: span 2;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.normal {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.images-wrapper {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-flow: dense;
+    margin: 5px;
+}
+
+.img-actions {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ri-heart-line {
+    color: red;
+}
+
+.ri-heart-fill {
+    color: rgba(255, 0, 0, 0.5)
+}
+
+.ri-add-circle-line {
+    color: #30D5C8;
+}
+
+i {
+    font-size: 25px;
+    margin: 5px;
+}
+
+.invisible {
+    display: none;
+    cursor: pointer;
+}
+
+.visible {
+    display: block;
+    cursor: pointer;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 50px;
+
+}
+
+.cart-item-img {
+    width: 250px;
+}
+
+.cart-item-main {
+    display: flex;
+    align-items: center;
+}
+
+.ri-delete-bin-fill, .ri-delete-bin-line {
+    cursor: pointer;
+    margin-right: 35px;
+    font-size: 35px;
+}
+
+.check-out {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.total-price {
+    text-align: center;
+}
+
+.place-order-btn {
+    cursor: pointer;
+    font-size: 1.75rem;
+    padding: 25px 15px;
+    align-self: center;
+    border-radius: none;
+    color: black;
+    border: 3px solid black;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    transition: 250ms;
+}
+
+.place-order-btn:hover {
+    color: white;
+    background-color: black;
+    box-shadow: 0 0 10px #525252;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
